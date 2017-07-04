@@ -1,0 +1,36 @@
+[submodule "production/modules/roles"]
+	path = production/modules/roles
+	url = git@github.com:attachmentgenie/attachmentgenie-roles.git
+[submodule "production/modules/stacks"]
+	path = production/modules/stacks
+	url = git@github.com:attachmentgenie/attachmentgenie-stacks.git
+[submodule "production/modules/profiles"]
+	path = production/modules/profiles
+	url = git@github.com:attachmentgenie/attachmentgenie-profiles.git
+[submodule "production/modules/stdlib"]
+	path = production/modules/stdlib
+	url = git@github.com:puppetlabs/puppetlabs-stdlib.git
+[submodule "production/modules/firewall"]
+	path = production/modules/firewall
+	url = git@github.com:puppetlabs/puppetlabs-firewall.git
+[submodule "production/modules/jenkins"]
+	path = production/modules/jenkins
+	url = https://github.com/jenkinsci/puppet-jenkins.git
+[submodule "production/modules/java"]
+	path = production/modules/java
+	url = https://github.com/puppetlabs/puppetlabs-java.git
+[submodule "production/modules/nginx"]
+	path = production/modules/nginx
+	url = https://github.com/voxpupuli/puppet-nginx.git
+[submodule "production/modules/archive"]
+	path = production/modules/archive
+	url = https://github.com/voxpupuli/puppet-archive.git
+[submodule "production/modules/concat"]
+	path = production/modules/concat
+	url = https://github.com/puppetlabs/puppetlabs-concat.git
+[submodule "production/modules/rundeck"]
+	path = production/modules/rundeck
+	url = https://github.com/voxpupuli/puppet-rundeck.git
+[submodule "production/modules/inifile"]
+	path = production/modules/inifile
+	url = https://github.com/puppetlabs/puppetlabs-inifile.git
