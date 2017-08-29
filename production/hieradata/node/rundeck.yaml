@@ -1,8 +1,0 @@
----
-profiles::nginx::vhosts:
-  rundeck.qa.vagrant:
-    proxy: 'http://127.0.0.1:4440'
-profiles::rundeck::manage_repo: true
-stacks::orchestration::rundeck: true
-stacks::runtime::java: true
-stacks::website::nginx: true
