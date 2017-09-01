@@ -1,9 +1,6 @@
 [submodule "production/modules/roles"]
 	path = production/modules/roles
 	url = git@github.com:attachmentgenie/attachmentgenie-roles.git
-[submodule "production/modules/stacks"]
-	path = production/modules/stacks
-	url = git@github.com:attachmentgenie/attachmentgenie-stacks.git
 [submodule "production/modules/profiles"]
 	path = production/modules/profiles
 	url = git@github.com:attachmentgenie/attachmentgenie-profiles.git
