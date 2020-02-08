@@ -7,4 +7,13 @@ profiles::testing::jenkins::purge_plugins: false
 profiles::website::nginx: true
 profiles::website::nginx::vhosts:
   jenkins.qa.vagrant:
+    client_max_body_size: 2M
     proxy: 'http://127.0.0.1:8080'
+    proxy_buffering: 'off'
+    proxy_http_version: '1.1'
+    proxy_read_timeout: '90'
+    proxy_set_header:
+      - 'Host $host:$server_port'
+      - 'X-Real-IP $remote_addr'
+      - 'X-Forwarded-For $proxy_add_x_forwarded_for'
+      - 'X-Forwarded-Proto $scheme'
