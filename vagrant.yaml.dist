@@ -2,6 +2,6 @@
 nodes:
     - name: jenkins
       hostname: jenkins.qa.vagrant
-      box: bento/centos-7.3
+      box: bento/centos-7.7
       ip: 192.168.48.42
 virtualbox_group: '/Vagrant/qa'

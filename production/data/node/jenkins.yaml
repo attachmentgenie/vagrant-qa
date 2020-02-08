@@ -1,0 +1,10 @@
+---
+profiles::runtime::java: true
+profiles::testing::develop: true
+profiles::testing::jenkins: true
+profiles::testing::jenkins::manage_repo: true
+profiles::testing::jenkins::purge_plugins: false
+profiles::website::nginx: true
+profiles::website::nginx::vhosts:
+  jenkins.qa.vagrant:
+    proxy: 'http://127.0.0.1:8080'
