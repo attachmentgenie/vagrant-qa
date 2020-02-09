@@ -3,3 +3,4 @@ classes:
  - roles::qa
 profiles::bootstrap::firewall: true
 profiles::bootstrap::firewall::purge: false
+profiles::testing::jenkins::master_url: 'http://jenkins.qa.vagrant'

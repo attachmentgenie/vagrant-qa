@@ -2,8 +2,36 @@
 profiles::runtime::java: true
 profiles::testing::develop: true
 profiles::testing::jenkins: true
+profiles::testing::jenkins::casc_config:
+  jenkins:
+    numExecutors: 0
+  jobs:
+    - script: >
+        job('seedjob') {
+          logRotator(-1, 10)
+          scm {
+              github('attachmentgenie/jenkins-seedjob-vagrant', 'master')
+          }
+          triggers {
+              githubPush()
+          }
+          steps {
+            jobDsl {
+              failOnMissingPlugin(true)
+              failOnSeedCollision(true)
+              ignoreExisting(false)
+              ignoreMissingFiles(false)
+              lookupStrategy('JENKINS_ROOT')
+              removedConfigFilesAction('DELETE')
+              removedJobAction('DELETE')
+              removedViewAction('DELETE')
+              sandbox(false)
+              targets('*.groovy')
+              unstableOnDeprecation(true)
+            }
+          }
+        }
 profiles::testing::jenkins::manage_repo: true
-profiles::testing::jenkins::purge_plugins: false
 profiles::website::nginx: true
 profiles::website::nginx::vhosts:
   jenkins.qa.vagrant:

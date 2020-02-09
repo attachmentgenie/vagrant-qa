@@ -1,0 +1,6 @@
+---
+profiles::runtime::java: true
+profiles::testing::develop: true
+profiles::testing::jenkins: true
+profiles::testing::jenkins::master: false
+profiles::testing::jenkins::slave: true

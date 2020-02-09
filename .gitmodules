@@ -25,3 +25,9 @@
 [submodule "production/modules/concat"]
 	path = production/modules/concat
 	url = https://github.com/puppetlabs/puppetlabs-concat.git
+[submodule "production/modules/systemd"]
+	path = production/modules/systemd
+	url = https://github.com/camptocamp/puppet-systemd.git
+[submodule "production/modules/transition"]
+	path = production/modules/transition
+	url = https://github.com/puppetlabs/puppetlabs-transition.git

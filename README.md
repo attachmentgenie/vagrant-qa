@@ -1,6 +1,6 @@
 #  vagrant-qa
 
-A vagrant setup that create jenkins setups
+A vagrant setup that create jenkins setups. This repo setups a jenkins master and a slave and configures the master using jenkins configuration as code.
 
 ## Requirements
     Virtualbox                  => https://www.virtualbox.org
@@ -27,3 +27,6 @@ A vagrant setup that create jenkins setups
 
 ### (G)UI interfaces
 
+    - name: jenkins
+      public_vhosts:
+        - http://jenkins.qa.vagrant admin:secret
