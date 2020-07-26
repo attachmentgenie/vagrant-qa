@@ -47,10 +47,10 @@ profiles::testing::jenkins::plugins:
   github : {}
   github-api: {}
 profiles::website::nginx: true
-profiles::website::nginx::vhosts:
+profiles::website::nginx::proxies:
   jenkins.qa.vagrant:
     client_max_body_size: 20M
-    proxy: 'http://127.0.0.1:8080'
+    proxy_url: 'http://127.0.0.1:8080'
     proxy_buffering: 'off'
     proxy_http_version: '1.1'
     proxy_read_timeout: '90'
