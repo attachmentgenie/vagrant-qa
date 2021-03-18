@@ -42,6 +42,7 @@ profiles::testing::jenkins::casc_config:
                   remote: "https://github.com/attachmentgenie/jenkins-library.git"
                   traits:
                     - "gitTagDiscovery"
+profiles::testing::jenkins::lts: false
 profiles::testing::jenkins::manage_repo: true
 profiles::testing::jenkins::plugins:
   github : {}
